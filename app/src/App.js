@@ -13,9 +13,9 @@ function App() {
     const data = Object.fromEntries(formData);
     console.log("Recebendo Nome: " + data.nome)
     console.log("Recebendo CEP: " + data.cep)
-
-    fetch(`https://3011-pink-lemur-nlrnp12d.ws-us15.gitpod.io?cep=${data.cep}`)
-    // fetch(`https://localhost:3011/?cep=14402463{data.cep}`)
+    
+    fetch(`https://3011-gray-leopon-3tfaksjt.ws-us15.gitpod.io?cep=${data.cep}`)
+    //fetch(`https://localhost:3011/?cep=14402463{data.cep}`)
     .then(response => response.json())
     .then(data =>{
       const array = convertToArray(data);
