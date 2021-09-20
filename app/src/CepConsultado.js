@@ -1,28 +1,24 @@
-import './estilos/estilo.css'
+import React from "react";
 
-function CepConsultado ({ evento }){
+export default function CepConsultado({evento}){
     return(
         <>
-        <h2>Cep Encontrado</h2>
+            <h2>CEP Encontrado</h2>
 
-        <ul className="list-group">
-            
-            { evento.map( item =>
-                <li className = "list-group-item" 
-                    key = {item.cep}>
+            <ul>
+                {evento.map(item =>
+                    <li className="list-group-item"
+                    key={item.cep}>
+                        <span> Mostrando Cep </span>
+                        <span> CEP: {item.cep} </span>
+                        <span> Logradouro: {item.logradouro} </span>
+                        <span> Bairro: {item.bairro} </span>
+                        <span> Localidade: {item.localidade} </span>
+                        <span> UF: {item.uf} </span>
+                    </li>
+                )}
 
-                    <span> CEP: {item.cep}</span>
-                    <span> Logradouro: {item.logradouro}</span>
-                    <span> Bairro: {item.bairro}</span>
-                    <span> Localidade: {item.localidade}</span>
-                    <span> UF: {item.uf}</span>
-                </li>
-
-            )}
-
-        </ul>
+            </ul>
         </>
     )
 }
-
-export default CepConsultado;

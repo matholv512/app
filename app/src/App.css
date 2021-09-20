@@ -37,16 +37,11 @@
   }
 }
 
-
-.conteiner {
-  padding-top: 15px;
+.container{
+  padding: 15px;
 }
 
-#cep {
+#cep{
   padding-top: 5px;
   padding-bottom: 10px;
-}
-
-#btn-consultar {
-  padding-top: 10px;
 }
